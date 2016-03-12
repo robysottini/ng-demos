@@ -17,7 +17,7 @@
         return service;
 
         function getMAA() {
-            return $http({ method: 'GET', url: '/data/maa'})
+            return $http({ method: 'GET', url: 'data/maa'})
                 .then(function(data, status, headers, config) {
                     return data.data[0].data.results;
                 }, function(error){
